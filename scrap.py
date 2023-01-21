@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-
+import pandas as pd
 
 class Property:
     def __init__(self):
@@ -30,7 +30,7 @@ def split_and_merge(text,key,prop,attr=None):
         else:
             prop.__setattr__(attr,k2)
 
-url = 'https://realestate.co.jp/en/rent/listing?page=1'
+url = 'https://apartments.gaijinpot.com/en/rent/listing?prefecture=JP-14&city=kawasaki&district=&min_price=&max_price=&min_meter=&rooms=&distance_station=&agent_id=&building_type=&building_age=&updated_within=&transaction_type=&order=&search=Search'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
 property_listing = soup.find_all("div", {"class": "property-listing"})
@@ -58,4 +58,6 @@ for item in property_listing:
             split_and_merge(text,'floor', prop)
             split_and_merge(text,'year built',prop, 'year_built')
             split_and_merge(text,'nearest station', prop, 'nearest_station')
-        print(prop.__dict__)
+        properties.append(prop.__dict__)
+df = pd.DataFrame.from_records(properties)
+df.to_csv("apartments.csv")
