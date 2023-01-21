@@ -30,34 +30,52 @@ def split_and_merge(text,key,prop,attr=None):
         else:
             prop.__setattr__(attr,k2)
 
-url = 'https://apartments.gaijinpot.com/en/rent/listing?prefecture=JP-14&city=kawasaki&district=&min_price=&max_price=&min_meter=&rooms=&distance_station=&agent_id=&building_type=&building_age=&updated_within=&transaction_type=&order=&search=Search'
+def extraction(property_listing):
+    properties = []
+    for item in property_listing:
+        body = item.find_all("div", {"class": "listing-body"})
+        prop = Property()
+        if body:
+            rc = body[0].find("div", attrs={"class": "listing-right-col"})
+            listing_divs = rc.select("div.listing-item")
+            prop = Property()
+            for dv in listing_divs:
+                text = dv.get_text(strip=True).lower()
+                split_and_merge(text, 'apartment', prop)
+                split_and_merge(text, 'monthly costs', prop, 'rent')
+            lc = body[0].find("div", attrs={'class': 'listing-info'})
+            cols = lc.find("div", attrs={'class': "listing-right-col"})
+            rest_divs = cols.select("div.listing-item")
+            for rdv in rest_divs:
+                text = rdv.get_text(strip=True).lower()
+                split_and_merge(text, 'size', prop)
+                split_and_merge(text, 'deposit', prop)
+                split_and_merge(text, 'key money', prop, 'key_money')
+                split_and_merge(text, 'floor', prop)
+                split_and_merge(text, 'year built', prop, 'year_built')
+                split_and_merge(text, 'nearest station', prop, 'nearest_station')
+            properties.append(prop.__dict__)
+    return properties
+
+
+url = 'https://apartments.gaijinpot.com/en/rent/listing?prefecture=JP-14&city=kawasaki&district=&min_price=&max_price=&min_meter=&rooms=20&distance_station=&agent_id=&building_type=&building_age=&updated_within=&transaction_type=&order=&search=Search'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
-property_listing = soup.find_all("div", {"class": "property-listing"})
-properties = []
-for item in property_listing:
-    body = item.find_all("div", {"class": "listing-body"})
-    prop = Property()
-    if body:
-        rc = body[0].find("div", attrs={"class": "listing-right-col"})
-        listing_divs = rc.select("div.listing-item")
-        right_vals = []
-        prop = Property()
-        for dv in listing_divs:
-            text = dv.get_text(strip=True).lower()
-            split_and_merge(text,'apartment',prop)
-            split_and_merge(text,'monthly costs',prop,'rent')
-        lc = body[0].find("div", attrs={'class': 'listing-info'})
-        cols = lc.find("div", attrs={'class': "listing-right-col"})
-        rest_divs = cols.select("div.listing-item")
-        for rdv in rest_divs:
-            text = rdv.get_text(strip=True).lower()
-            split_and_merge(text,'size', prop)
-            split_and_merge(text,'deposit', prop)
-            split_and_merge(text,'key money',prop,'key_money')
-            split_and_merge(text,'floor', prop)
-            split_and_merge(text,'year built',prop, 'year_built')
-            split_and_merge(text,'nearest station', prop, 'nearest_station')
-        properties.append(prop.__dict__)
-df = pd.DataFrame.from_records(properties)
+paginator = soup.find('ul', {'class': 'paginator'}).find_all('li')[3]
+from_item, to_item = paginator.get_text().strip().split('of')
+from_item, *_ = from_item.split("-")
+pages = int(to_item) // 15 + 1 if int(to_item) % 15 > 0 else 0
+results = []
+for page in range(1,pages+1):
+    if page != 1:
+        url += '&page=' + str(page)
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    property_listing = soup.find_all("div", {"class": "property-listing"})
+    properties = extraction(property_listing)
+    results.extend(properties)
+df = pd.DataFrame.from_records(results)
 df.to_csv("apartments.csv")
+
+
+
