@@ -14,6 +14,7 @@ class Property:
         self.floor = None
         self.year_built = None
         self.nearest_station = None
+        self.link = None
 
 def split_and_merge(text,key,prop,attr=None):
     if key not in text:
@@ -54,6 +55,12 @@ def extraction(property_listing):
                 split_and_merge(text, 'floor', prop)
                 split_and_merge(text, 'year built', prop, 'year_built')
                 split_and_merge(text, 'nearest station', prop, 'nearest_station')
+            footer = item.find_all("div", attrs={'class': 'listing-footer'})
+            if footer:
+                links = footer[0].find_all('a', href=True)
+                if links:
+                    href = links[0].attrs['href'].strip()
+                    prop.__setattr__('link','https://apartments.gaijinpot.com/'+href)
             properties.append(prop.__dict__)
     return properties
 
@@ -75,7 +82,7 @@ for page in range(1,pages+1):
     properties = extraction(property_listing)
     results.extend(properties)
 df = pd.DataFrame.from_records(results)
-df.to_csv("apartments.csv")
+df.to_csv("apartments.csv", index=False)
 
 
 

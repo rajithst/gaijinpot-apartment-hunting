@@ -1,65 +1,65 @@
-,apartment_type,address,rent,availability,size,deposit,key_money,floor,year_built,nearest_station
-0,2k ," tsuchihashikawasaki-shi miyamae-ku, kanagawa","75,000",,32.60 m²,"72,000",0,2 / 5f,1988,miyamaedaira station (8 min. walk)
-1,2dk ," kizukikawasaki-shi nakahara-ku, kanagawa","85,000",,32.18 m²,"82,000",0,4 / 5f,1972,moto sumiyoshi station (2 min. walk)
-2,2dk ," shimonumabekawasaki-shi nakahara-ku, kanagawa","91,000",,39.66 m²,"91,000",0,1 / 2f,1994,mukaigawara station (3 min. walk)
-3,2dk ," miyazakikawasaki-shi miyamae-ku, kanagawa","101,000",,40.72 m²,"98,000",0,2 / 3f,1989,miyazakidai station (1 min. walk)
-4,2dk ," katahirakawasaki-shi asao-ku, kanagawa","74,550",,39.74 m²,0,0,1 / 2f,1997,kakio station (12 min. walk)
-5,2k ," suwakawasaki-shi takatsu-ku, kanagawa","79,000",,36.00 m²,0,0,1 / 2f,1990,futako shinchi station (9 min. walk)
-6,3dk ," nishiikutakawasaki-shi tama-ku, kanagawa","75,000",,49.60 m²,0,0,1 / 3f,1989,yomiuriland-mae station (8 min. walk)
-7,3dk ," kamikodanakakawasaki-shi nakahara-ku, kanagawa","85,000",,45.00 m²,"85,000",0,2 / 2f,1988,musashishinjou station (9 min. walk)
-8,2dk ," suenagakawasaki-shi takatsu-ku, kanagawa","108,000",,49.20 m²,"153,000",0,2 / 5f,1998,kajigaya station (6 min. walk)
-9,2ldk ," miyazakikawasaki-shi miyamae-ku, kanagawa","94,000",,54.00 m²,"94,000",0,2 / 3f,1998,miyazakidai station (5 min. walk)
-10,3k ," shimokodanakakawasaki-shi nakahara-ku, kanagawa","101,000",,54.81 m²,"98,000",0,3 / 3f,1992,musashinakahara station (15 min. walk)
-11,2dk ," kokandorikawasaki-shi kawasaki-ku, kanagawa","90,000",,43.74 m²,0,0,2 / 3f,1995,hamakawasaki station (10 min. walk)
-12,2dk ," shimmarukohigashikawasaki-shi nakahara-ku, kanagawa","81,000",,44.50 m²,0,0,2 / 3f,1974,musashi-kosugi station (2 min. walk)
-13,2dk ," sakadokawasaki-shi takatsu-ku, kanagawa","90,000",,45.80 m²,"85,000",0,2 / 4f,1985,takatsu station (10 min. walk)
-14,2dk ," sugekawasaki-shi tama-ku, kanagawa","71,000",,41.28 m²,"69,000",0,5 / 5f,1989,yanokuchi station (5 min. walk)
-15,2dk ," suwakawasaki-shi takatsu-ku, kanagawa","84,000",,39.74 m²,"84,000",0,1 / 2f,1993,takatsu station (10 min. walk)
-16,2dk ," noboritokawasaki-shi tama-ku, kanagawa","64,000",,34.78 m²,"63,000",0,2 / 2f,1986,nakanoshima station (10 min. walk)
-17,2dk ," noboritokawasaki-shi tama-ku, kanagawa","64,000",,34.78 m²,"63,000",0,2 / 2f,1986,nakanoshima station (10 min. walk)
-18,2dk ," shukugawarakawasaki-shi tama-ku, kanagawa","110,000",,44.00 m²,"106,000",0,1 / 3f,1997,noborito station (9 min. walk)
-19,2dk ," shimokodanakakawasaki-shi nakahara-ku, kanagawa","68,000",,36.42 m²,0,0,2 / 2f,1988,musashinakahara station (10 min. walk)
-20,2ldk ," kamikodanakakawasaki-shi nakahara-ku, kanagawa","98,000",,54.94 m²,"93,000",0,2 / 3f,1994,musashinakahara station (10 min. walk)
-21,2dk ," futagokawasaki-shi takatsu-ku, kanagawa","119,000",,46.50 m²,"112,000",0,1 / 4f,2000,takatsu station (9 min. walk)
-22,2dk ," shimmarukohigashikawasaki-shi nakahara-ku, kanagawa","81,000",,44.50 m²,0,0,2 / 3f,1974,musashi-kosugi station (2 min. walk)
-23,2dk ," kamiasaokawasaki-shi asao-ku, kanagawa","57,500",,34.65 m²,"56,000","56,000",2 / 2f,1982,shin yurigaoka station (8 min. walk)
-24,3ldk ," shimonumabekawasaki-shi nakahara-ku, kanagawa","268,000",,98.11 m²,0,"384,000",5 / 6f,2016,musashi-kosugi station (3 min. walk)
-25,3sldk ," isagokawasaki-shi kawasaki-ku, kanagawa","260,000",,101.03 m²,"500,000","250,000",3 / 8f,1986,keikyukawasaki station (1 min. walk)
-26,2dk , mag,"99,050",,39.74 m²,0,"46,000",4 / 5f,1997,miyazakidai station (10 min. walk)
-27,2dk , mag,"99,050",,39.74 m²,0,0,3 / 5f,1997,miyazakidai station (11 min. walk)
-28,2dk ," kajigayakawasaki-shi takatsu-ku, kanagawa","93,100",,40.77 m²,"87,000",0,3 / 5f,1987,kajigaya station (7 min. walk)
-29,2dk ," suenagakawasaki-shi takatsu-ku, kanagawa","98,550",,43.84 m²,"96,000",0,1 / 3f,1987,musashishinjou station (15 min. walk)
-30,,,"264,340",,70.63 m²,"263,000","263,000",1 / 3f,2022,musashinakahara station (7 min. walk)
-31,2ldk ," arimakawasaki-shi miyamae-ku, kanagawa","93,000",,52.15 m²,"93,000","93,000",4 / 4f,1993,saginuma station(5 min. by bus)
-32,,,"279,340",,80.60 m²,"278,000","278,000",1 / 3f,2022,moto sumiyoshi station (13 min. walk)
-33,2ldk ," shimonogekawasaki-shi takatsu-ku, kanagawa","136,000",,47.76 m²,0,"130,000",1 / 3f,2021,futako shinchi station (24 min. walk)
-34,2ldk ," kizukikawasaki-shi nakahara-ku, kanagawa","156,200",,70.00 m²,"312,400",0,3 / 5f,1997,moto sumiyoshi station (16 min. walk)
-35,,,"173,000",,76.56 m²,"173,000","173,000",,2022,yomiuriland-mae station (15 min. walk)
-36,2dk , mag,"86,445",,44.70 m²,0,0,1 / 3f,1991,miyamaedaira station (10 min. walk)
-37,2ldk ," okagamikawasaki-shi asao-ku, kanagawa","85,150",,48.59 m²,0,0,1 / 2f,2003,tsurukawa station (9 min. walk)
-38,2ldk ," shimokodanakakawasaki-shi nakahara-ku, kanagawa","127,500",,55.67 m²,0,"61,500",3 / 3f,1991,musashinakahara station (7 min. walk)
-39,2ldk , m,"88,000",,61.43 m²,0,0,3 / 3f,1979,ikuta station (8 min. walk)
-40,2dk ," takaishikawasaki-shi asao-ku, kanagawa","73,500",,38.88 m²,"70,000",0,3 / 3f,1999,yomiuriland-mae station (7 min. walk)
-41,3ldk ," nishiikutakawasaki-shi tama-ku, kanagawa","175,000",,113.05 m²,"160,000","160,000",3 / 4f,1987,ikuta station (4 min. walk)
-42,2ldk ," kosugi gotenchokawasaki-shi nakahara-ku, kanagawa","133,000",,70.00 m²,"260,000",0,5 / 10f,2002,musashi-kosugi station (6 min. walk)
-43,3ldk ," kosugi gotenchokawasaki-shi nakahara-ku, kanagawa","133,700",,70.00 m²,"260,000",0,7 / 8f,2003,musashi-kosugi station (7 min. walk)
-44,3ldk ," miyazakikawasaki-shi miyamae-ku, kanagawa","250,000",,109.43 m²,"250,000","250,000",5 / 6f,2001,miyazakidai station (7 min. walk)
-45,,,"178,000",,89.37 m²,"178,000","178,000",,2013,miyazakidai station (9 min. walk)
-46,2ldk ," shibokuchikawasaki-shi takatsu-ku, kanagawa","124,000",,59.15 m²,"120,000","120,000",2 / 2f,2015,musashinakahara station (23 min. walk)
-47,,,"240,000",,102.05 m²,"480,000","240,000",,2021,kajigaya station (13 min. walk)
-48,3ldk ," kamikodanakakawasaki-shi nakahara-ku, kanagawa","180,000",,76.49 m²,"165,000","165,000",11 / 14f,2005,musashishinjou station (11 min. walk)
-49,,,"250,000",,86.53 m²,"250,000","250,000",,2022,kajigaya station (10 min. walk)
-50,3ldk ," shimokodanakakawasaki-shi nakahara-ku, kanagawa","156,000",,60.30 m²,"148,000","148,000",1 / 5f,1988,musashinakahara station (10 min. walk)
-51,,,"174,450",,76.56 m²,"173,000","173,000",,2022,yomiuriland-mae station (15 min. walk)
-52,3ldk ," sugekitaurakawasaki-shi tama-ku, kanagawa","100,000",,77.00 m²,"194,000",0,5 / 6f,2010,inadazutsumi station (10 min. walk)
-53,,,"195,000",,99.77 m²,"195,000","195,000",,2015,kajigaya station (18 min. walk)
-54,3dk ," kosugi gotenchokawasaki-shi nakahara-ku, kanagawa","140,000",,63.00 m²,"274,000",0,5 / 8f,2003,musashi-kosugi station (7 min. walk)
-55,3dk ," hatsuyamakawasaki-shi miyamae-ku, kanagawa","74,000",,49.20 m²,0,0,1 / 5f,1965,tama plaza station (30+ min. walk)
-56,,,"228,000",,99.36 m²,"228,000","228,000",,2016,kakio station (13 min. walk)
-57,3dk ," sugaokawasaki-shi miyamae-ku, kanagawa","86,000",,55.00 m²,"166,000",0,3 / 6f,1997,azamino station(6 min. by bus)
-58,2ldk ," noboritoshimmachikawasaki-shi tama-ku, kanagawa","129,000",,69.00 m²,"250,000",0,7 / 9f,2003,noborito station (6 min. walk)
-59,2ldk ," miyamaedairakawasaki-shi miyamae-ku, kanagawa","195,000",,93.44 m²,0,0,2 / 6f,1993,miyamaedaira station (9 min. walk)
-60,2k ," miyauchikawasaki-shi nakahara-ku, kanagawa","65,880",,29.16 m²,0,0,2 / 4f,1985,musashinakahara station (8 min. walk)
-61,2ldk ," kosugi gotenchokawasaki-shi nakahara-ku, kanagawa","148,000",,65.00 m²,"290,000",0,3 / 8f,2003,musashi-kosugi station (7 min. walk)
-62,3ldk ," kosugi gotenchokawasaki-shi nakahara-ku, kanagawa","142,500",,70.00 m²,"280,000",0,3 / 10f,2003,musashi-kosugi station (10 min. walk)
-63,2dk , m,"97,540",,40.13 m²,"92,000","46,000",1 / 3f,1995,"3 min. walk to the nearest bus stop, then 11 min. by bus to hiyoshi station"
+apartment_type,address,rent,availability,size,deposit,key_money,floor,year_built,nearest_station,link
+2k ," tsuchihashikawasaki-shi miyamae-ku, kanagawa","75,000",,32.60 m²,"72,000",0,2 / 5f,1988,miyamaedaira station (8 min. walk),https://apartments.gaijinpot.com//en/rent/view/751517
+2dk ," kizukikawasaki-shi nakahara-ku, kanagawa","85,000",,32.18 m²,"82,000",0,4 / 5f,1972,moto sumiyoshi station (2 min. walk),https://apartments.gaijinpot.com//en/rent/view/889295
+2dk ," shimonumabekawasaki-shi nakahara-ku, kanagawa","91,000",,39.66 m²,"91,000",0,1 / 2f,1994,mukaigawara station (3 min. walk),https://apartments.gaijinpot.com//en/rent/view/889259
+2dk ," miyazakikawasaki-shi miyamae-ku, kanagawa","101,000",,40.72 m²,"98,000",0,2 / 3f,1989,miyazakidai station (1 min. walk),https://apartments.gaijinpot.com//en/rent/view/751749
+2dk ," katahirakawasaki-shi asao-ku, kanagawa","74,550",,39.74 m²,0,0,1 / 2f,1997,kakio station (12 min. walk),https://apartments.gaijinpot.com//en/rent/view/926172
+2k ," suwakawasaki-shi takatsu-ku, kanagawa","79,000",,36.00 m²,0,0,1 / 2f,1990,futako shinchi station (9 min. walk),https://apartments.gaijinpot.com//en/rent/view/568103
+3dk ," nishiikutakawasaki-shi tama-ku, kanagawa","75,000",,49.60 m²,0,0,1 / 3f,1989,yomiuriland-mae station (8 min. walk),https://apartments.gaijinpot.com//en/rent/view/930105
+3dk ," kamikodanakakawasaki-shi nakahara-ku, kanagawa","85,000",,45.00 m²,"85,000",0,2 / 2f,1988,musashishinjou station (9 min. walk),https://apartments.gaijinpot.com//en/rent/view/930107
+2dk ," suenagakawasaki-shi takatsu-ku, kanagawa","108,000",,49.20 m²,"153,000",0,2 / 5f,1998,kajigaya station (6 min. walk),https://apartments.gaijinpot.com//en/rent/view/751747
+2ldk ," miyazakikawasaki-shi miyamae-ku, kanagawa","94,000",,54.00 m²,"94,000",0,2 / 3f,1998,miyazakidai station (5 min. walk),https://apartments.gaijinpot.com//en/rent/view/930103
+3k ," shimokodanakakawasaki-shi nakahara-ku, kanagawa","101,000",,54.81 m²,"98,000",0,3 / 3f,1992,musashinakahara station (15 min. walk),https://apartments.gaijinpot.com//en/rent/view/928897
+2dk ," kokandorikawasaki-shi kawasaki-ku, kanagawa","90,000",,43.74 m²,0,0,2 / 3f,1995,hamakawasaki station (10 min. walk),https://apartments.gaijinpot.com//en/rent/view/889305
+2dk ," shimmarukohigashikawasaki-shi nakahara-ku, kanagawa","81,000",,44.50 m²,0,0,2 / 3f,1974,musashi-kosugi station (2 min. walk),https://apartments.gaijinpot.com//en/rent/view/889261
+2dk ," sakadokawasaki-shi takatsu-ku, kanagawa","90,000",,45.80 m²,"85,000",0,2 / 4f,1985,takatsu station (10 min. walk),https://apartments.gaijinpot.com//en/rent/view/889258
+2dk ," sugekawasaki-shi tama-ku, kanagawa","71,000",,41.28 m²,"69,000",0,5 / 5f,1989,yanokuchi station (5 min. walk),https://apartments.gaijinpot.com//en/rent/view/930110
+2dk ," suwakawasaki-shi takatsu-ku, kanagawa","84,000",,39.74 m²,"84,000",0,1 / 2f,1993,takatsu station (10 min. walk),https://apartments.gaijinpot.com//en/rent/view/751728
+2dk ," noboritokawasaki-shi tama-ku, kanagawa","64,000",,34.78 m²,"63,000",0,2 / 2f,1986,nakanoshima station (10 min. walk),https://apartments.gaijinpot.com//en/rent/view/889249
+2dk ," noboritokawasaki-shi tama-ku, kanagawa","64,000",,34.78 m²,"63,000",0,2 / 2f,1986,nakanoshima station (10 min. walk),https://apartments.gaijinpot.com//en/rent/view/889274
+2dk ," shukugawarakawasaki-shi tama-ku, kanagawa","110,000",,44.00 m²,"106,000",0,1 / 3f,1997,noborito station (9 min. walk),https://apartments.gaijinpot.com//en/rent/view/889532
+2dk ," shimokodanakakawasaki-shi nakahara-ku, kanagawa","68,000",,36.42 m²,0,0,2 / 2f,1988,musashinakahara station (10 min. walk),https://apartments.gaijinpot.com//en/rent/view/889293
+2ldk ," kamikodanakakawasaki-shi nakahara-ku, kanagawa","98,000",,54.94 m²,"93,000",0,2 / 3f,1994,musashinakahara station (10 min. walk),https://apartments.gaijinpot.com//en/rent/view/936931
+2dk ," futagokawasaki-shi takatsu-ku, kanagawa","119,000",,46.50 m²,"112,000",0,1 / 4f,2000,takatsu station (9 min. walk),https://apartments.gaijinpot.com//en/rent/view/889531
+2dk ," shimmarukohigashikawasaki-shi nakahara-ku, kanagawa","81,000",,44.50 m²,0,0,2 / 3f,1974,musashi-kosugi station (2 min. walk),https://apartments.gaijinpot.com//en/rent/view/889287
+2dk ," kamiasaokawasaki-shi asao-ku, kanagawa","57,500",,34.65 m²,"56,000","56,000",2 / 2f,1982,shin yurigaoka station (8 min. walk),https://apartments.gaijinpot.com//en/rent/view/889248
+3ldk ," shimonumabekawasaki-shi nakahara-ku, kanagawa","268,000",,98.11 m²,0,"384,000",5 / 6f,2016,musashi-kosugi station (3 min. walk),https://apartments.gaijinpot.com//en/rent/view/930972
+3sldk ," isagokawasaki-shi kawasaki-ku, kanagawa","260,000",,101.03 m²,"500,000","250,000",3 / 8f,1986,keikyukawasaki station (1 min. walk),https://apartments.gaijinpot.com//en/rent/view/930971
+2dk , mag,"99,050",,39.74 m²,0,"46,000",4 / 5f,1997,miyazakidai station (10 min. walk),https://apartments.gaijinpot.com//en/rent/view/349069
+2dk , mag,"99,050",,39.74 m²,0,0,3 / 5f,1997,miyazakidai station (11 min. walk),https://apartments.gaijinpot.com//en/rent/view/708600
+2dk ," kajigayakawasaki-shi takatsu-ku, kanagawa","93,100",,40.77 m²,"87,000",0,3 / 5f,1987,kajigaya station (7 min. walk),https://apartments.gaijinpot.com//en/rent/view/1007964
+2dk ," suenagakawasaki-shi takatsu-ku, kanagawa","98,550",,43.84 m²,"96,000",0,1 / 3f,1987,musashishinjou station (15 min. walk),https://apartments.gaijinpot.com//en/rent/view/938583
+,,"264,340",,70.63 m²,"263,000","263,000",1 / 3f,2022,musashinakahara station (7 min. walk),https://apartments.gaijinpot.com//en/rent/view/1006497
+2ldk ," arimakawasaki-shi miyamae-ku, kanagawa","93,000",,52.15 m²,"93,000","93,000",4 / 4f,1993,saginuma station(5 min. by bus),https://apartments.gaijinpot.com//en/rent/view/1006582
+,,"279,340",,80.60 m²,"278,000","278,000",1 / 3f,2022,moto sumiyoshi station (13 min. walk),https://apartments.gaijinpot.com//en/rent/view/1007033
+2ldk ," shimonogekawasaki-shi takatsu-ku, kanagawa","136,000",,47.76 m²,0,"130,000",1 / 3f,2021,futako shinchi station (24 min. walk),https://apartments.gaijinpot.com//en/rent/view/998301
+2ldk ," kizukikawasaki-shi nakahara-ku, kanagawa","156,200",,70.00 m²,"312,400",0,3 / 5f,1997,moto sumiyoshi station (16 min. walk),https://apartments.gaijinpot.com//en/rent/view/1007467
+,,"173,000",,76.56 m²,"173,000","173,000",,2022,yomiuriland-mae station (15 min. walk),https://apartments.gaijinpot.com//en/rent/view/987533
+2dk , mag,"86,445",,44.70 m²,0,0,1 / 3f,1991,miyamaedaira station (10 min. walk),https://apartments.gaijinpot.com//en/rent/view/1003373
+2ldk ," okagamikawasaki-shi asao-ku, kanagawa","85,150",,48.59 m²,0,0,1 / 2f,2003,tsurukawa station (9 min. walk),https://apartments.gaijinpot.com//en/rent/view/985020
+2ldk ," shimokodanakakawasaki-shi nakahara-ku, kanagawa","127,500",,55.67 m²,0,"61,500",3 / 3f,1991,musashinakahara station (7 min. walk),https://apartments.gaijinpot.com//en/rent/view/994248
+2ldk , m,"88,000",,61.43 m²,0,0,3 / 3f,1979,ikuta station (8 min. walk),https://apartments.gaijinpot.com//en/rent/view/981239
+2dk ," takaishikawasaki-shi asao-ku, kanagawa","73,500",,38.88 m²,"70,000",0,3 / 3f,1999,yomiuriland-mae station (7 min. walk),https://apartments.gaijinpot.com//en/rent/view/776505
+3ldk ," nishiikutakawasaki-shi tama-ku, kanagawa","175,000",,113.05 m²,"160,000","160,000",3 / 4f,1987,ikuta station (4 min. walk),https://apartments.gaijinpot.com//en/rent/view/986733
+2ldk ," kosugi gotenchokawasaki-shi nakahara-ku, kanagawa","133,000",,70.00 m²,"260,000",0,5 / 10f,2002,musashi-kosugi station (6 min. walk),https://apartments.gaijinpot.com//en/rent/view/560466
+3ldk ," kosugi gotenchokawasaki-shi nakahara-ku, kanagawa","133,700",,70.00 m²,"260,000",0,7 / 8f,2003,musashi-kosugi station (7 min. walk),https://apartments.gaijinpot.com//en/rent/view/527391
+3ldk ," miyazakikawasaki-shi miyamae-ku, kanagawa","250,000",,109.43 m²,"250,000","250,000",5 / 6f,2001,miyazakidai station (7 min. walk),https://apartments.gaijinpot.com//en/rent/view/989264
+,,"178,000",,89.37 m²,"178,000","178,000",,2013,miyazakidai station (9 min. walk),https://apartments.gaijinpot.com//en/rent/view/986805
+2ldk ," shibokuchikawasaki-shi takatsu-ku, kanagawa","124,000",,59.15 m²,"120,000","120,000",2 / 2f,2015,musashinakahara station (23 min. walk),https://apartments.gaijinpot.com//en/rent/view/1006900
+,,"240,000",,102.05 m²,"480,000","240,000",,2021,kajigaya station (13 min. walk),https://apartments.gaijinpot.com//en/rent/view/995231
+3ldk ," kamikodanakakawasaki-shi nakahara-ku, kanagawa","180,000",,76.49 m²,"165,000","165,000",11 / 14f,2005,musashishinjou station (11 min. walk),https://apartments.gaijinpot.com//en/rent/view/986727
+,,"250,000",,86.53 m²,"250,000","250,000",,2022,kajigaya station (10 min. walk),https://apartments.gaijinpot.com//en/rent/view/1004493
+3ldk ," shimokodanakakawasaki-shi nakahara-ku, kanagawa","156,000",,60.30 m²,"148,000","148,000",1 / 5f,1988,musashinakahara station (10 min. walk),https://apartments.gaijinpot.com//en/rent/view/998941
+,,"174,450",,76.56 m²,"173,000","173,000",,2022,yomiuriland-mae station (15 min. walk),https://apartments.gaijinpot.com//en/rent/view/994776
+3ldk ," sugekitaurakawasaki-shi tama-ku, kanagawa","100,000",,77.00 m²,"194,000",0,5 / 6f,2010,inadazutsumi station (10 min. walk),https://apartments.gaijinpot.com//en/rent/view/526588
+,,"195,000",,99.77 m²,"195,000","195,000",,2015,kajigaya station (18 min. walk),https://apartments.gaijinpot.com//en/rent/view/1003211
+3dk ," kosugi gotenchokawasaki-shi nakahara-ku, kanagawa","140,000",,63.00 m²,"274,000",0,5 / 8f,2003,musashi-kosugi station (7 min. walk),https://apartments.gaijinpot.com//en/rent/view/751026
+3dk ," hatsuyamakawasaki-shi miyamae-ku, kanagawa","74,000",,49.20 m²,0,0,1 / 5f,1965,tama plaza station (30+ min. walk),https://apartments.gaijinpot.com//en/rent/view/627262
+,,"228,000",,99.36 m²,"228,000","228,000",,2016,kakio station (13 min. walk),https://apartments.gaijinpot.com//en/rent/view/1001478
+3dk ," sugaokawasaki-shi miyamae-ku, kanagawa","86,000",,55.00 m²,"166,000",0,3 / 6f,1997,azamino station(6 min. by bus),https://apartments.gaijinpot.com//en/rent/view/909271
+2ldk ," noboritoshimmachikawasaki-shi tama-ku, kanagawa","129,000",,69.00 m²,"250,000",0,7 / 9f,2003,noborito station (6 min. walk),https://apartments.gaijinpot.com//en/rent/view/529890
+2ldk ," miyamaedairakawasaki-shi miyamae-ku, kanagawa","195,000",,93.44 m²,0,0,2 / 6f,1993,miyamaedaira station (9 min. walk),https://apartments.gaijinpot.com//en/rent/view/998794
+2k ," miyauchikawasaki-shi nakahara-ku, kanagawa","65,880",,29.16 m²,0,0,2 / 4f,1985,musashinakahara station (8 min. walk),https://apartments.gaijinpot.com//en/rent/view/947378
+2ldk ," kosugi gotenchokawasaki-shi nakahara-ku, kanagawa","148,000",,65.00 m²,"290,000",0,3 / 8f,2003,musashi-kosugi station (7 min. walk),https://apartments.gaijinpot.com//en/rent/view/527386
+3ldk ," kosugi gotenchokawasaki-shi nakahara-ku, kanagawa","142,500",,70.00 m²,"280,000",0,3 / 10f,2003,musashi-kosugi station (10 min. walk),https://apartments.gaijinpot.com//en/rent/view/546511
+2dk , m,"97,540",,40.13 m²,"92,000","46,000",1 / 3f,1995,"3 min. walk to the nearest bus stop, then 11 min. by bus to hiyoshi station",https://apartments.gaijinpot.com//en/rent/view/585622
