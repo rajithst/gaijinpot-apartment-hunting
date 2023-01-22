@@ -5,6 +5,7 @@ import prefec_cities as cities
 class Property:
     def __init__(self):
         self.apartment_type = None
+        self.city = None
         self.address = None
         self.rent = None
         self.availability = None
@@ -24,7 +25,7 @@ def split_and_merge(text,key,prop,attr=None):
         _, k2 = k2.split("¥")
     if 'apartment' in text:
         prop.__setattr__('apartment_type',k1)
-        prop.__setattr__('address',k2.split("in")[1])
+        prop.__setattr__('address',k2.split("in",1)[1])
     else:
         if not attr:
             prop.__setattr__(key, k2)
@@ -60,7 +61,7 @@ def extraction(property_listing):
                 links = footer[0].find_all('a', href=True)
                 if links:
                     href = links[0].attrs['href'].strip()
-                    prop.__setattr__('link','https://apartments.gaijinpot.com/'+href)
+                    prop.__setattr__('link','https://apartments.gaijinpot.com'+href)
             properties.append(prop.__dict__)
     return properties
 
@@ -100,6 +101,8 @@ for city in prefecture_cities:
             soup = BeautifulSoup(response.text, 'html.parser')
             property_listing = soup.find_all("div", {"class": "property-listing"})
             properties = extraction(property_listing)
+            for p in properties:
+                p['city'] = city
             results.extend(properties)
 df = pd.DataFrame.from_records(results)
 df.to_csv("kanagawa_apartments.csv", index=False)
