@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-
+import prefec_cities as cities
 class Property:
     def __init__(self):
         self.apartment_type = None
@@ -65,24 +65,44 @@ def extraction(property_listing):
     return properties
 
 
-url = 'https://apartments.gaijinpot.com/en/rent/listing?prefecture=JP-14&city=kawasaki&district=&min_price=&max_price=&min_meter=&rooms=20&distance_station=&agent_id=&building_type=&building_age=&updated_within=&transaction_type=&order=&search=Search'
-response = requests.get(url)
-soup = BeautifulSoup(response.text, 'html.parser')
-paginator = soup.find('ul', {'class': 'paginator'}).find_all('li')[3]
-from_item, to_item = paginator.get_text().strip().split('of')
-from_item, *_ = from_item.split("-")
-pages = int(to_item) // 15 + 1 if int(to_item) % 15 > 0 else 0
+prefecture = 'kanagawa'
+prefecture_cities = cities.kanagawa
+min_price = None
+max_price = None
+layout_t = ['2K','2SK', '2DK', '2SLK', '2SDK', '2LDK', '2SLDK']
+layout_n = [20,23,25,26,28,30,33]
+layout = dict(zip(layout_t,layout_n))
 results = []
-for page in range(1,pages+1):
-    if page != 1:
-        url += '&page=' + str(page)
-    response = requests.get(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    property_listing = soup.find_all("div", {"class": "property-listing"})
-    properties = extraction(property_listing)
-    results.extend(properties)
+for city in prefecture_cities:
+    print('processing ->',city)
+    for l1,l2 in layout.items():
+        print('     ->',l1)
+        url = 'https://apartments.gaijinpot.com/en/rent/listing?prefecture=JP-14&district=&min_price=&max_price' \
+              '=&min_meter=&rooms='+ str(l2) \
+              +'&distance_station=&agent_id=&building_type=&building_age=&updated_within=&transaction_type=&order' \
+               '=&search=Search&city='+city
+        response = requests.get(url)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        paginator = soup.find('ul', {'class': 'paginator'})
+        if not paginator:
+            continue
+        paginator = paginator.find_all('li')
+        if len(paginator) < 3:
+            continue
+        paginator = paginator[3]
+        from_item, to_item = paginator.get_text().strip().split('of')
+        from_item, *_ = from_item.split("-")
+        pages = int(to_item) // 15 + 1 if int(to_item) % 15 > 0 else 0
+        for page in range(1,pages+1):
+            if page != 1:
+                url += '&page=' + str(page)
+            response = requests.get(url)
+            soup = BeautifulSoup(response.text, 'html.parser')
+            property_listing = soup.find_all("div", {"class": "property-listing"})
+            properties = extraction(property_listing)
+            results.extend(properties)
 df = pd.DataFrame.from_records(results)
-df.to_csv("apartments.csv", index=False)
+df.to_csv("kanagawa_apartments.csv", index=False)
 
 
 
